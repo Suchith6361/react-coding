@@ -10,6 +10,8 @@ const Navbar=()=>{
     <Link to="/CondRend"><div>ConditionRender</div></Link>
     <Link to="/EventKey"> <div>Eventkey</div></Link>
      <Link to="/UseRed"> <div>UseReducer</div></Link>
+     <Link to="/context"><div>UseContext</div></Link>
+       <Link to="/context2"><div>UseContext2</div></Link>
         </div>
     )
 }

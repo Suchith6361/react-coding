@@ -1,13 +1,15 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import CondRend from './components/CondRendering'
-import EventKey from './components/EventKey'
-import FunctionProp from './components/FunctionProps'
-import StateFunction from './components/StateFunction'
+import CondRend from './pages/CondRendering'
+import EventKey from './pages/EventKey'
+import FunctionProp from './pages/FunctionProps'
+import StateFunction from './pages/StateFunction'
+import DisplayName from './components/DisplayName';
+import ChangeName from './components/ChangeName';
 
-const UseReducer=React.lazy(()=>import('./components/UseReducer'));
-const UseEffect=React.lazy(()=>import('./components/ExampleUseEffect'));
+const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
+const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
 
 
 
@@ -23,6 +25,8 @@ return(
 <Route path='/' element={<UseEffect/>}/>
 <Route path='/FunProp' element={<FunctionProp name='Ganesh' age='28' gender='Male'/>}/>
 <Route path='/StateFun' element={<StateFunction/>}/>
+<Route path='/context'  element={<DisplayName/>} />
+<Route path='/context2'  element={<ChangeName/>} />
 
 
 <Route path='/UseRed' element={<Suspense fallback={<h1>Loading Reducer ......</h1>}><UseReducer/></Suspense>}/>
