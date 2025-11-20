@@ -12,6 +12,7 @@ const Navbar=()=>{
      <Link to="/UseRed"> <div>UseReducer</div></Link>
      <Link to="/context"><div>UseContext</div></Link>
        <Link to="/context2"><div>UseContext2</div></Link>
+            <Link to="/fetch"><div>UseFetch</div></Link>
         </div>
     )
 }

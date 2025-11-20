@@ -7,6 +7,7 @@ import FunctionProp from './pages/FunctionProps'
 import StateFunction from './pages/StateFunction'
 import DisplayName from './components/DisplayName';
 import ChangeName from './components/ChangeName';
+import ExampleUseEffect2 from './pages/ExampleUseEffect2';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -27,6 +28,8 @@ return(
 <Route path='/StateFun' element={<StateFunction/>}/>
 <Route path='/context'  element={<DisplayName/>} />
 <Route path='/context2'  element={<ChangeName/>} />
+<Route path='/fetch' element={<ExampleUseEffect2/>}/>
+
 
 
 <Route path='/UseRed' element={<Suspense fallback={<h1>Loading Reducer ......</h1>}><UseReducer/></Suspense>}/>
