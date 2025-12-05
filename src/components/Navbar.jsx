@@ -38,6 +38,9 @@ const Navbar = () => {
         {" "}
         <div>LocalStorage</div>
       </Link>
+      <Link to="/callBack">
+      <div>CallBack</div>
+      </Link>
     </div>
   );
 };

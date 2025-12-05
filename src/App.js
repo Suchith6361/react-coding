@@ -9,6 +9,7 @@ import DisplayName from './components/DisplayName';
 import ChangeName from './components/ChangeName';
 import ExampleUseEffect2 from './pages/ExampleUseEffect2';
 import LocalStorageExample from './pages/LocalStorageExample';
+import ButtonParent from './pages/ButtonParent';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -31,11 +32,8 @@ return(
 <Route path='/context2'  element={<ChangeName/>} />
 <Route path='/fetch' element={<ExampleUseEffect2/>}/>
 <Route path='/local' element={<LocalStorageExample/>} />
-
-
-
 <Route path='/UseRed' element={<Suspense fallback={<h1>Loading Reducer ......</h1>}><UseReducer/></Suspense>}/>
-
+<Route path='/callBack' element={<ButtonParent/>} />
   </Routes>
   </Suspense>
   </BrowserRouter>
