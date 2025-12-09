@@ -41,6 +41,9 @@ const Navbar = () => {
       <Link to="/callBack">
       <div>CallBack</div>
       </Link>
+      <Link to="/useMemo"> 
+      <div>UseMemo</div>
+      </Link>
     </div>
   );
 };
