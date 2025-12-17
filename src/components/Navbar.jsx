@@ -44,6 +44,11 @@ const Navbar = () => {
       <Link to="/useMemo"> 
       <div>UseMemo</div>
       </Link>
+       <Link to="/useRef"> 
+      <div>UseRef</div>
+      </Link>
+
+      <Link to="/useRef2"><div>UseRef2</div></Link>
     </div>
   );
 };
