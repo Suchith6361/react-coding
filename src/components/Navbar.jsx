@@ -39,16 +39,20 @@ const Navbar = () => {
         <div>LocalStorage</div>
       </Link>
       <Link to="/callBack">
-      <div>CallBack</div>
+        <div>CallBack</div>
       </Link>
-      <Link to="/useMemo"> 
-      <div>UseMemo</div>
+      <Link to="/useMemo">
+        <div>UseMemo</div>
       </Link>
-       <Link to="/useRef"> 
-      <div>UseRef</div>
+      <Link to="/useRef">
+        <div>UseRef</div>
       </Link>
-
-      <Link to="/useRef2"><div>UseRef2</div></Link>
+      <Link to="/useRef2">
+        <div>UseRef2</div>
+      </Link>
+      <Link to="/redux">
+        <div>Redux</div>
+      </Link>
     </div>
   );
 };

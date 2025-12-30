@@ -13,6 +13,7 @@ import ButtonParent from './pages/ButtonParent';
 import UseMemo from './pages/UseMemo';
 import UseRef from './pages/UseRef';
 import UseRef2 from './pages/UseRef2';
+import Counter from './components/Counter';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -40,6 +41,8 @@ return(
 <Route path='/useMemo' element={<UseMemo/>}/>
 <Route path='/useRef' element={<UseRef/>}/>
 <Route path='/useRef2' element={<UseRef2/>}/>
+<Route path='/redux' element={<Counter/>}/>
+
   </Routes>
   </Suspense>
   </BrowserRouter>
