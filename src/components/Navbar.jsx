@@ -8,7 +8,7 @@ const Navbar = () => {
         {" "}
         <div>FunctionProps</div>
       </Link>
-      <Link to="/StateFun">
+      <Link to="/hoc-state">
         <div>StateFunction</div>
       </Link>
       <Link to="/">
@@ -52,6 +52,9 @@ const Navbar = () => {
       </Link>
       <Link to="/redux">
         <div>Redux</div>
+      </Link>
+      <Link to="/hoc">
+      <div>HOC</div>
       </Link>
     </div>
   );

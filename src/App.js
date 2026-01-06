@@ -14,6 +14,8 @@ import UseMemo from './pages/UseMemo';
 import UseRef from './pages/UseRef';
 import UseRef2 from './pages/UseRef2';
 import Counter from './components/Counter';
+import {EnhancedProfile} from './components/EnhancedProfile';
+import { EnhancedState } from './components/EnhancedProfile';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -31,7 +33,8 @@ return(
 <Route path='/EventKey' element={<EventKey/>}/>
 <Route path='/' element={<UseEffect/>}/>
 <Route path='/FunProp' element={<FunctionProp name='Ganesh' age='28' gender='Male'/>}/>
-<Route path='/StateFun' element={<StateFunction/>}/>
+<Route path='/hoc-state' element={<EnhancedState/>}/>
+
 <Route path='/context'  element={<DisplayName/>} />
 <Route path='/context2'  element={<ChangeName/>} />
 <Route path='/fetch' element={<ExampleUseEffect2/>}/>
@@ -42,6 +45,7 @@ return(
 <Route path='/useRef' element={<UseRef/>}/>
 <Route path='/useRef2' element={<UseRef2/>}/>
 <Route path='/redux' element={<Counter/>}/>
+<Route path='/hoc' element={<EnhancedProfile/>}/>
 
   </Routes>
   </Suspense>

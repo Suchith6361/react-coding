@@ -41,7 +41,7 @@ const Counter = () => {
    
       <h2 className="text-red-600">User List</h2>
 
-      <button onClick={() => dispatch(fetchUsers())}>
+      <button className="bg-blue-600  p-2 rounded-md text-white"  onClick={() => dispatch(fetchUsers())}>
         Load Users
       </button>
 
