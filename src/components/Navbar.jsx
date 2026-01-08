@@ -56,6 +56,9 @@ const Navbar = () => {
       <Link to="/hoc">
       <div>HOC</div>
       </Link>
+      <Link to="/throttle">
+      <div>Throttle</div>
+      </Link>
     </div>
   );
 };

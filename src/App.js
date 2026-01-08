@@ -16,6 +16,7 @@ import UseRef2 from './pages/UseRef2';
 import Counter from './components/Counter';
 import {EnhancedProfile} from './components/EnhancedProfile';
 import { EnhancedState } from './components/EnhancedProfile';
+import ThrottleExample from './pages/ThrottleExample';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -46,6 +47,7 @@ return(
 <Route path='/useRef2' element={<UseRef2/>}/>
 <Route path='/redux' element={<Counter/>}/>
 <Route path='/hoc' element={<EnhancedProfile/>}/>
+<Route path='/throttle' element={<ThrottleExample/>}/>
 
   </Routes>
   </Suspense>
