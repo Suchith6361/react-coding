@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-row gap-4 bg-slate-900 text-white p-5">
+    <div className="gap-4 bg-slate-900 text-white p-5">
+      <div className="flex gap-6 mb-4">
       <Link to="/FunProp">
         {" "}
         <div>FunctionProps</div>
@@ -50,6 +51,8 @@ const Navbar = () => {
       <Link to="/useRef2">
         <div>UseRef2</div>
       </Link>
+  </div>
+  <div className="flex gap-6">
       <Link to="/redux">
         <div>Redux</div>
       </Link>
@@ -59,6 +62,10 @@ const Navbar = () => {
       <Link to="/throttle">
       <div>Throttle</div>
       </Link>
+        <Link to="/debounce">
+      <div>Debounce</div>
+      </Link>
+      </div>
     </div>
   );
 };
