@@ -65,6 +65,9 @@ const Navbar = () => {
         <Link to="/debounce">
       <div>Debounce</div>
       </Link>
+         <Link to="/buggy">
+      <div>Buggy</div>
+      </Link>
       </div>
     </div>
   );

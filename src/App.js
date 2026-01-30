@@ -18,6 +18,8 @@ import {EnhancedProfile} from './components/EnhancedProfile';
 import { EnhancedState } from './components/EnhancedProfile';
 import ThrottleExample from './pages/ThrottleExample';
 import Debouncing from './pages/Debouncing';
+import Buggy from './pages/Buggy';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -50,6 +52,7 @@ return(
 <Route path='/hoc' element={<EnhancedProfile/>}/>
 <Route path='/throttle' element={<ThrottleExample/>}/>
 <Route path='/debounce' element={<Debouncing/>}/>
+<Route path='/buggy' element={<ErrorBoundary><Buggy/></ErrorBoundary>}/>
 
   </Routes>
   </Suspense>
