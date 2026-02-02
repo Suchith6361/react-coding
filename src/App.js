@@ -20,6 +20,7 @@ import ThrottleExample from './pages/ThrottleExample';
 import Debouncing from './pages/Debouncing';
 import Buggy from './pages/Buggy';
 import ErrorBoundary from './components/ErrorBoundary';
+import Portal from './components/Portal';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -53,6 +54,7 @@ return(
 <Route path='/throttle' element={<ThrottleExample/>}/>
 <Route path='/debounce' element={<Debouncing/>}/>
 <Route path='/buggy' element={<ErrorBoundary><Buggy/></ErrorBoundary>}/>
+<Route path='/portal' element={<Portal/>}/>
 
   </Routes>
   </Suspense>
