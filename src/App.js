@@ -21,6 +21,7 @@ import Debouncing from './pages/Debouncing';
 import Buggy from './pages/Buggy';
 import ErrorBoundary from './components/ErrorBoundary';
 import Portal from './components/Portal';
+import Userslist from './components/UsersList';
 
 const UseReducer=React.lazy(()=>import('./pages/UseReducer'));
 const UseEffect=React.lazy(()=>import('./pages/ExampleUseEffect'));
@@ -55,6 +56,8 @@ return(
 <Route path='/debounce' element={<Debouncing/>}/>
 <Route path='/buggy' element={<ErrorBoundary><Buggy/></ErrorBoundary>}/>
 <Route path='/portal' element={<Portal/>}/>
+
+<Route path='/userslist' element={<Userslist/>}/>
 
   </Routes>
   </Suspense>

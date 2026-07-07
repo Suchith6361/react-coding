@@ -71,6 +71,9 @@ const Navbar = () => {
         <Link to="/portal">
           <div>Portal</div>
         </Link>
+        <Link to="/userslist">
+          <div>Users List</div>
+        </Link>
       </div>
     </div>
   );
